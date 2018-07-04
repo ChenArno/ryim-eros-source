@@ -1,0 +1,13 @@
+{
+  "userInfo": [{
+    "token": "GY0WXwnBhjl7J4D9fjudQWxsI7yMlUTH3jF058oecyTk+/4bqn9fhrvtr/GFJbyclQi0rp82G16duBOPnGDkkx6dxQKpO5jD",
+    "userId": "vanz001",
+    "name": "张三",
+    "portraitUri": "http://img.besoo.com/file/201705/16/0940316445908.jpg"
+  }, {
+    "token": "o0vd0JhTlN+mALjKZr9tFThKq8+1BTg96b5S6BsTd0qyaE8HSMiiTXZ4ptG/AUesf45dn/c6r7xaXlg88IkWIhvTlFJ9EI0R",
+    "userId": "vanz002",
+    "name": "李四",
+    "portraitUri": "https://img4.duitang.com/uploads/item/201601/27/20160127121505_dPmN5.jpeg"
+  }]
+}

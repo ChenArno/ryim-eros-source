@@ -1,15 +1,21 @@
 <template>
   <div class="cont">
-    <div class="button" @click="enter(1)">用户1</div>
-    <div class="button">用户2</div>
+    <div class="button" @click="enter(item)" v-for="item in userInfo">{{item.name}}</div>
   </div>
 </template>
 
 <script>
+import person from 'Config/person.json'
 export default {
+  data(){
+    return{
+      //token通过后台获取,测试可以通过api调式https://developer.rongcloud.cn/apitool/ulIiBYl9S0ex+9ZDW5U=
+      userInfo:person.userInfo
+    }
+  },
   methods:{
-    enter(val){
-      this.$router.open({name:"hello"})
+    enter(params){
+      this.$router.open({name:"hello",params})
     }
   }
 }

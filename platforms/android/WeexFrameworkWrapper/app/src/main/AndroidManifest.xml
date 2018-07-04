@@ -143,18 +143,6 @@
 
         <!-- 个推SDK配置结束 -->
 
-        <!--融云配置开始-->
-        <provider
-            android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.vanz.ryim.FileProvider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/filepaths" />
-        </provider>
-
-        <!--融云配置结束-->
 
     </application>
 

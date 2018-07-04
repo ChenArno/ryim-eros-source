@@ -5,6 +5,7 @@ import android.app.Application;
 import com.benmu.framework.BMInitConfig;
 import com.benmu.framework.BMWXApplication;
 import com.benmu.framework.BMWXEngine;
+import com.vanz.ryim.ImApp;
 
 import io.rong.imkit.RongIM;
 
@@ -20,7 +21,7 @@ public class App extends BMWXApplication {
         super.onCreate();
         mInstance = this;
 
-        RongIM.init(this);
+        ImApp.getImApp(this);
     }
 
 }

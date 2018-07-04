@@ -18,7 +18,7 @@ public class homeActivity extends MainActivity {
     public boolean onTouchEvent(MotionEvent e) {
         int button = e.getButtonState();
         int action = e.getAction();
-        if (button == MotionEvent.BUTTON_SECONDARY && action == MotionEvent.ACTION_DOWN) {//  右键
+        if (button == MotionEvent.BUTTON_BACK && action == MotionEvent.ACTION_POINTER_UP) {//  右键
             Log.i(TAG, "onTouchEvent:返回");
             return true;
         }
