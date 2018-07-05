@@ -1,23 +1,23 @@
 <template>
-	<div>
-		<vanz-im-view ref="imview" class="container">
-			<text>好友列表</text>
-			<div class="swiper" v-for="item in imLists" @click="enterRoom(item)">
-				<!-- <text>{{item.name}}</text> -->
-				<image class="swiper-img" :src="item.portraitUri"></image>
-				<text>{{item.name}}</text>
-			</div>
-			<text>会话列表</text>
-			<div class="swiper" v-for="item in lastMsg" @click="enterRoom(item)">
-				<!-- <text>{{item.name}}</text> -->
-				<image class="swiper-img" :src="item.portraitUri"></image>
-				<div class="swiper-right">
-					<text>{{item.content}}</text>
-					<text>{{item.lastTime}}</text>
-				</div>
-			</div>
-		</vanz-im-view>
-	</div>
+  <div>
+    <vanz-im-view ref="imview" class="container">
+      <text>好友列表</text>
+      <div class="swiper" v-for="item in imLists" @click="enterRoom(item)">
+        <!-- <text>{{item.name}}</text> -->
+        <image class="swiper-img" :src="item.portraitUri"></image>
+        <text>{{item.name}}</text>
+      </div>
+      <text>会话列表</text>
+      <div class="swiper" v-for="item in lastMsg" @click="enterRoom(item)">
+        <!-- <text>{{item.name}}</text> -->
+        <image class="swiper-img" :src="item.portraitUri"></image>
+        <div class="swiper-right">
+          <text>{{item.content}}</text>
+          <text>{{item.lastTime}}</text>
+        </div>
+      </div>
+    </vanz-im-view>
+  </div>
 </template>
 <script>
 const ryIm = weex.requireModule('ryIm')
@@ -46,6 +46,7 @@ export default {
     globalEvent.addEventListener('activity.back', options => {
       //do soming
       //监听会话页面返回
+      this.selectList()
     })
     globalEvent.addEventListener('ryMsg.received', options => {
       let { sentTime, content, targetId } = options
@@ -55,7 +56,7 @@ export default {
     })
     globalEvent.addEventListener('ryMsg.send', options => {
       let { targetId, content, sentTime } = options
-      this.selectList()
+      // this.selectList()
       //do soming
       //监听发送消息
     })

@@ -1,0 +1,23 @@
+Created by IDE
+.DS_Store
+.idea/
+*.iml
+
+# Android
+*.apk
+*.ap_
+wxframework
+sdk
+nexus
+# files for the dex VM
+*.dex
+
+# Android Studio
+.idea/
+.gradle
+/*/local.properties
+/*/outd
+build/
+.idea/
+.gradle/
+android/playground/local.properties
