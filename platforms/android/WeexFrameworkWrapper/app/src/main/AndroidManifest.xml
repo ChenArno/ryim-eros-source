@@ -159,7 +159,7 @@
         <activity
             android:name="com.vanz.ryim.ConversationActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"
+            android:theme="@style/RyAppTheme"
             android:windowSoftInputMode="stateHidden|adjustResize">
 
             <intent-filter>

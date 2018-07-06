@@ -11,6 +11,7 @@
       <div class="swiper" v-for="item in lastMsg" @click="enterRoom(item)">
         <!-- <text>{{item.name}}</text> -->
         <image class="swiper-img" :src="item.portraitUri"></image>
+        <text>{{personLists.filter(x=>{return x.userId ==item.userId})[0].name}}</text>
         <div class="swiper-right">
           <text>{{item.content}}</text>
           <text>{{item.lastTime}}</text>
@@ -23,23 +24,23 @@
 const ryIm = weex.requireModule('ryIm')
 import person from 'Config/person.json'
 const globalEvent = weex.requireModule('globalEvent')
+import {showLongTime} from 'Utils'
 export default {
   data() {
     return {
       imLists: [],
-      lastMsg: []
+      lastMsg: [],
+      personLists: []
     }
   },
   eros: {
     // 页面周期相关 start
     beforeAppear(params, options) {
+      this.personLists = person.userInfo
       this.imLists = person.userInfo.filter(v => {
         return v.userId !== params.userId
       })
       this.init(params.token)
-    },
-    disappeared() {
-      // ryIm.logout()
     }
   },
   mounted() {
@@ -77,7 +78,18 @@ export default {
     selectList() {
       this.$refs.imview.selectList(r => {
         if (!r || r.length == 0) return
-        this.lastMsg = r
+        //用户名和头像需要自己通过targetId在缓存中寻找
+        this.lastMsg = r.map(v => {
+          let [one] = this.personLists.filter(x => {
+            return x.userId == v.userId
+          })
+          if (one) {
+            v.name = one.name
+            v.portraitUri = one.portraitUri
+          }
+          v.lastTime = showLongTime(parseInt(v.lastTime));
+          return v
+        })
         console.log('===>获取数据成功' + JSON.stringify(r))
       })
     },
@@ -85,15 +97,13 @@ export default {
       // 聊天类型
       // NONE(0, "none"),
       // PRIVATE(1, "private"),//单聊
-      // DISCUSSION(2, "discussion"),
-      // GROUP(3, "group"),
+      // DISCUSSION(2, "discussion"),//讨论组
+      // GROUP(3, "group"),//群组
       // CHATROOM(4, "chatroom"), //聊天室
-      // CUSTOMER_SERVICE(5, "customer_service"),
-      // SYSTEM(6, "system"),
-      // APP_PUBLIC_SERVICE(7, "app_public_service"),
-      // PUBLIC_SERVICE(8, "public_service"),
-      // PUSH_SERVICE(9, "push_service");
-      this.$refs.imview.enterRoom(1, userId, name)
+      // CUSTOMER_SERVICE(5, "customer_service"),//客服
+      // SYSTEM(6, "system"),//系统
+      // 暂时支持单聊，其他未测试
+      this.$refs.imview.enterRoom('1', userId, name)
     }
   }
 }

@@ -15,6 +15,11 @@
 		9781D2F11FFF1D2A00BC2C34 /* bundle.zip in Resources */ = {isa = PBXBuildFile; fileRef = 9781D2EF1FFF1D2A00BC2C34 /* bundle.zip */; };
 		9781D2F21FFF1D2A00BC2C34 /* bundle.config in Resources */ = {isa = PBXBuildFile; fileRef = 9781D2F01FFF1D2A00BC2C34 /* bundle.config */; };
 		97A898EA1FB57A9E0095D77C /* eros.native.json in Resources */ = {isa = PBXBuildFile; fileRef = 97A898E91FB57A9D0095D77C /* eros.native.json */; };
+		A77AAA8A20EE115A004CA40B /* VanzIm.m in Sources */ = {isa = PBXBuildFile; fileRef = A77AAA8920EE115A004CA40B /* VanzIm.m */; };
+		A77AAA8E20EE166B004CA40B /* VanzImView.m in Sources */ = {isa = PBXBuildFile; fileRef = A77AAA8D20EE166B004CA40B /* VanzImView.m */; };
+		A77AAA9420EE17C6004CA40B /* chatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A77AAA9120EE17C6004CA40B /* chatViewController.m */; };
+		A77AAA9520EE17C6004CA40B /* UIColor+RCColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A77AAA9320EE17C6004CA40B /* UIColor+RCColor.m */; };
+		A77AAA9820EE1865004CA40B /* leftBack.png in Resources */ = {isa = PBXBuildFile; fileRef = A77AAA9720EE1865004CA40B /* leftBack.png */; };
 		E1DE85A0A42930C50BEB1245 /* libPods-WeexEros.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EE25A79A3A97DFB7A3158EC /* libPods-WeexEros.a */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +41,15 @@
 		9781D2EF1FFF1D2A00BC2C34 /* bundle.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = bundle.zip; sourceTree = "<group>"; };
 		9781D2F01FFF1D2A00BC2C34 /* bundle.config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bundle.config; sourceTree = "<group>"; };
 		97A898E91FB57A9D0095D77C /* eros.native.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = eros.native.json; sourceTree = "<group>"; };
+		A77AAA8920EE115A004CA40B /* VanzIm.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VanzIm.m; sourceTree = "<group>"; };
+		A77AAA8B20EE1168004CA40B /* VanzIm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VanzIm.h; sourceTree = "<group>"; };
+		A77AAA8C20EE1662004CA40B /* VanzImView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VanzImView.h; sourceTree = "<group>"; };
+		A77AAA8D20EE166B004CA40B /* VanzImView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VanzImView.m; sourceTree = "<group>"; };
+		A77AAA9020EE17C6004CA40B /* chatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chatViewController.h; sourceTree = "<group>"; };
+		A77AAA9120EE17C6004CA40B /* chatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chatViewController.m; sourceTree = "<group>"; };
+		A77AAA9220EE17C6004CA40B /* UIColor+RCColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RCColor.h"; sourceTree = "<group>"; };
+		A77AAA9320EE17C6004CA40B /* UIColor+RCColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RCColor.m"; sourceTree = "<group>"; };
+		A77AAA9720EE1865004CA40B /* leftBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftBack.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +104,7 @@
 		9737F9EA1F384AFD00000800 /* WeexEros */ = {
 			isa = PBXGroup;
 			children = (
-				A7DE6DCD20EB6C5B00CF8243 /* components */,
+				A77AAA8820EE1139004CA40B /* ryim */,
 				97155AC51F444E4200615307 /* WeexEros.entitlements */,
 				9737F9EE1F384AFD00000800 /* AppDelegate.h */,
 				9737F9EF1F384AFD00000800 /* AppDelegate.m */,
@@ -113,11 +127,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A7DE6DCD20EB6C5B00CF8243 /* components */ = {
+		A77AAA8820EE1139004CA40B /* ryim */ = {
 			isa = PBXGroup;
 			children = (
+				A77AAA9620EE17F6004CA40B /* Resources */,
+				A77AAA9020EE17C6004CA40B /* chatViewController.h */,
+				A77AAA9120EE17C6004CA40B /* chatViewController.m */,
+				A77AAA9220EE17C6004CA40B /* UIColor+RCColor.h */,
+				A77AAA9320EE17C6004CA40B /* UIColor+RCColor.m */,
+				A77AAA8B20EE1168004CA40B /* VanzIm.h */,
+				A77AAA8920EE115A004CA40B /* VanzIm.m */,
+				A77AAA8C20EE1662004CA40B /* VanzImView.h */,
+				A77AAA8D20EE166B004CA40B /* VanzImView.m */,
 			);
-			name = components;
+			path = ryim;
+			sourceTree = "<group>";
+		};
+		A77AAA9620EE17F6004CA40B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A77AAA9720EE1865004CA40B /* leftBack.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9737F9F81F384AFD00000800 /* Assets.xcassets in Resources */,
+				A77AAA9820EE1865004CA40B /* leftBack.png in Resources */,
 				9781D2F21FFF1D2A00BC2C34 /* bundle.config in Resources */,
 				9781D2F11FFF1D2A00BC2C34 /* bundle.zip in Resources */,
 				97A898EA1FB57A9E0095D77C /* eros.native.json in Resources */,
@@ -276,8 +308,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A77AAA9520EE17C6004CA40B /* UIColor+RCColor.m in Sources */,
 				9737F9F01F384AFD00000800 /* AppDelegate.m in Sources */,
 				9737F9ED1F384AFD00000800 /* main.m in Sources */,
+				A77AAA9420EE17C6004CA40B /* chatViewController.m in Sources */,
+				A77AAA8A20EE115A004CA40B /* VanzIm.m in Sources */,
+				A77AAA8E20EE166B004CA40B /* VanzImView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

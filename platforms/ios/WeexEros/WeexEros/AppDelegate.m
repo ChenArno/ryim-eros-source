@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <RongIMKit/RongIMKit.h>
 
 @interface AppDelegate ()
 
@@ -19,6 +20,7 @@
     BOOL result = [super application:application didFinishLaunchingWithOptions:launchOptions];
     
     //do something
+    [[RCIM sharedRCIM] initWithAppKey:@"82hegw5u8ympx"];
     
     return result;
 }
