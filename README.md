@@ -8,5 +8,6 @@
 
 ## 分支介绍
 
-- master (附带着 demo 的完整开发底层)
-- pure (无任何功能的纯净开发模板) `(开发中)`
+融云demo介绍
+
+- [https://github.com/ChenArno/ryim-eros-source.git/ezgif-2-9c81f96a34.gif]
