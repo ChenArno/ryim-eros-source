@@ -10,4 +10,4 @@
 
 融云demo介绍
 
-- [https://github.com/ChenArno/ryim-eros-source.git/ezgif-2-9c81f96a34.gif]
+- <img src="https://github.com/ChenArno/ryim-eros-source.git/ezgif-2-9c81f96a34.gif" width="150" style="margin-right:5px; border: 1px solid #ccc;" />
