@@ -144,15 +144,15 @@
 		A7705B8220F06EA00041E64B /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				A7705B8320F06EA00041E64B /* VanzIm.m */,
-				A7705B8420F06EA00041E64B /* UIColor+RCColor.h */,
-				A7705B8520F06EA00041E64B /* VanzImView.m */,
-				A7705B8620F06EA00041E64B /* Resources */,
+				A7705B8C20F06EA00041E64B /* chatViewController.h */,
 				A7705B8820F06EA00041E64B /* chatViewController.m */,
+				A7705B8620F06EA00041E64B /* Resources */,
+				A7705B8420F06EA00041E64B /* UIColor+RCColor.h */,
 				A7705B8920F06EA00041E64B /* UIColor+RCColor.m */,
 				A7705B8A20F06EA00041E64B /* VanzIm.h */,
+				A7705B8320F06EA00041E64B /* VanzIm.m */,
 				A7705B8B20F06EA00041E64B /* VanzImView.h */,
-				A7705B8C20F06EA00041E64B /* chatViewController.h */,
+				A7705B8520F06EA00041E64B /* VanzImView.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";
