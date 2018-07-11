@@ -24,7 +24,7 @@
 const ryIm = weex.requireModule('ryIm')
 import person from 'Config/person.json'
 const globalEvent = weex.requireModule('globalEvent')
-import {showLongTime} from 'Utils'
+import { showLongTime } from 'Utils'
 export default {
   data() {
     return {
@@ -40,7 +40,7 @@ export default {
       this.imLists = person.userInfo.filter(v => {
         return v.userId !== params.userId
       })
-      this.init(params.token)
+      this.init(params)
     }
   },
   mounted() {
@@ -63,11 +63,14 @@ export default {
     })
   },
   methods: {
-    init(token) {
+    init(params) {
+      let { token, userId, name, portraitUri } = params
       ryIm.init(
         token,
         res => {
           console.log('===>连接成功，userId:' + res)
+          //当前用户信息刷新
+          this.$refs.imview.refreshUserInfo(userId, name, portraitUri)
           this.selectList()
         },
         err => {
@@ -87,13 +90,13 @@ export default {
             v.name = one.name
             v.portraitUri = one.portraitUri
           }
-          v.lastTime = showLongTime(parseInt(v.lastTime));
+          v.lastTime = showLongTime(parseInt(v.lastTime))
           return v
         })
         console.log('===>获取数据成功' + JSON.stringify(r))
       })
     },
-    enterRoom({ userId, name }) {
+    enterRoom({ userId, name, portraitUri }) {
       // 聊天类型
       // NONE(0, "none"),
       // PRIVATE(1, "private"),//单聊
@@ -104,6 +107,7 @@ export default {
       // SYSTEM(6, "system"),//系统
       // 暂时支持单聊，其他未测试
       this.$refs.imview.enterRoom('1', userId, name)
+      this.$refs.imview.refreshUserInfo(userId, name, portraitUri)
     }
   }
 }

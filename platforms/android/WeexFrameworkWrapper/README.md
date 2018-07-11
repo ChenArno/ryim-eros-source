@@ -154,6 +154,11 @@ this.$refs.imview.deleteItem(type,userId,res=>{
     })
 ```
 
+### 新增头像用户更新
+```Js
+refreshUserInfo(userId,name,imgUrl)
+```
+
 具体例子详见
 
 - [https://github.com/ChenArno/ryim-eros-source.git] (https://github.com/ChenArno/ryim-eros-source.git)
