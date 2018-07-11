@@ -68,9 +68,9 @@ export default {
       ryIm.init(
         token,
         res => {
-          console.log('===>连接成功，userId:' + res)
-          //当前用户信息刷新
-          this.$refs.imview.refreshUserInfo(userId, name, portraitUri)
+          // console.log('===>连接成功，userId:' + res)
+          //当前当前登录用户信息刷新
+          this.$refs.imview.refreshLoginInfo(userId, name, portraitUri)
           this.selectList()
         },
         err => {
@@ -93,7 +93,6 @@ export default {
           v.lastTime = showLongTime(parseInt(v.lastTime))
           return v
         })
-        console.log('===>获取数据成功' + JSON.stringify(r))
       })
     },
     enterRoom({ userId, name, portraitUri }) {

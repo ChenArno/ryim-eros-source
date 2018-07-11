@@ -15,10 +15,10 @@
 		9781D2F11FFF1D2A00BC2C34 /* bundle.zip in Resources */ = {isa = PBXBuildFile; fileRef = 9781D2EF1FFF1D2A00BC2C34 /* bundle.zip */; };
 		9781D2F21FFF1D2A00BC2C34 /* bundle.config in Resources */ = {isa = PBXBuildFile; fileRef = 9781D2F01FFF1D2A00BC2C34 /* bundle.config */; };
 		97A898EA1FB57A9E0095D77C /* eros.native.json in Resources */ = {isa = PBXBuildFile; fileRef = 97A898E91FB57A9D0095D77C /* eros.native.json */; };
+		A710EDFE20F5A6AD009403CB /* ryLeftBack.png in Resources */ = {isa = PBXBuildFile; fileRef = A710EDFD20F5A6AD009403CB /* ryLeftBack.png */; };
 		A7705B8E20F06EA00041E64B /* ryIm.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A7705B8120F06EA00041E64B /* ryIm.podspec */; };
 		A7705B8F20F06EA00041E64B /* VanzIm.m in Sources */ = {isa = PBXBuildFile; fileRef = A7705B8320F06EA00041E64B /* VanzIm.m */; };
 		A7705B9020F06EA00041E64B /* VanzImView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7705B8520F06EA00041E64B /* VanzImView.m */; };
-		A7705B9120F06EA00041E64B /* leftBack.png in Resources */ = {isa = PBXBuildFile; fileRef = A7705B8720F06EA00041E64B /* leftBack.png */; };
 		A7705B9220F06EA00041E64B /* chatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7705B8820F06EA00041E64B /* chatViewController.m */; };
 		A7705B9320F06EA00041E64B /* UIColor+RCColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A7705B8920F06EA00041E64B /* UIColor+RCColor.m */; };
 		A7705B9420F06EA00041E64B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A7705B8D20F06EA00041E64B /* README.md */; };
@@ -43,11 +43,11 @@
 		9781D2EF1FFF1D2A00BC2C34 /* bundle.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = bundle.zip; sourceTree = "<group>"; };
 		9781D2F01FFF1D2A00BC2C34 /* bundle.config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bundle.config; sourceTree = "<group>"; };
 		97A898E91FB57A9D0095D77C /* eros.native.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = eros.native.json; sourceTree = "<group>"; };
+		A710EDFD20F5A6AD009403CB /* ryLeftBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ryLeftBack.png; sourceTree = "<group>"; };
 		A7705B8120F06EA00041E64B /* ryIm.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ryIm.podspec; sourceTree = "<group>"; };
 		A7705B8320F06EA00041E64B /* VanzIm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VanzIm.m; sourceTree = "<group>"; };
 		A7705B8420F06EA00041E64B /* UIColor+RCColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RCColor.h"; sourceTree = "<group>"; };
 		A7705B8520F06EA00041E64B /* VanzImView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VanzImView.m; sourceTree = "<group>"; };
-		A7705B8720F06EA00041E64B /* leftBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftBack.png; sourceTree = "<group>"; };
 		A7705B8820F06EA00041E64B /* chatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chatViewController.m; sourceTree = "<group>"; };
 		A7705B8920F06EA00041E64B /* UIColor+RCColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RCColor.m"; sourceTree = "<group>"; };
 		A7705B8A20F06EA00041E64B /* VanzIm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VanzIm.h; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 		A7705B8620F06EA00041E64B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A7705B8720F06EA00041E64B /* leftBack.png */,
+				A710EDFD20F5A6AD009403CB /* ryLeftBack.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -233,11 +233,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A710EDFE20F5A6AD009403CB /* ryLeftBack.png in Resources */,
 				9737F9F81F384AFD00000800 /* Assets.xcassets in Resources */,
 				9781D2F21FFF1D2A00BC2C34 /* bundle.config in Resources */,
 				9781D2F11FFF1D2A00BC2C34 /* bundle.zip in Resources */,
 				A7705B8E20F06EA00041E64B /* ryIm.podspec in Resources */,
-				A7705B9120F06EA00041E64B /* leftBack.png in Resources */,
 				97A898EA1FB57A9E0095D77C /* eros.native.json in Resources */,
 				A7705B9420F06EA00041E64B /* README.md in Resources */,
 				9774A2C01FF0D82900029216 /* Launch Screen.storyboard in Resources */,
